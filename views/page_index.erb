@@ -1,0 +1,11 @@
+<h4>Add New Page</h4>
+
+<input type='text' ng-model='newPage'/>
+<button ng-click='addNewPage()'>Add</button>
+
+<h3> Recent Pages</h3>
+<ul style="list-style-type: none;">
+  <li ng-repeat='page in pages'>P{{page.id}} : {{page.keywords}}</li>
+</ul>
+
+<a href="/queries">Go to Queries</a>
